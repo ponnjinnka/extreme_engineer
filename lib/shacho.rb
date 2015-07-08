@@ -5,9 +5,12 @@ require_relative'Bucho'
 
 shain = Tanto.new
 shain.standup
+puts"私の給料は#{shain.clac_salary(100)}円です。"
 
-shain2 = Shunin.new
-shain2.standup
+shain = Shunin.new
+shain.standup
+puts"私の給料は#{shain.clac_salary(100)}円です。"
 
-shain3 = Bucho.new
-shain3.standup
+shain = Bucho.new
+shain.standup
+puts"私の給料は#{shain.clac_salary(100)}円です。"
