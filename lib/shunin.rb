@@ -4,7 +4,6 @@ class Shunin < Shain
   end
 
   def clac_salary(money)
-    money = money * 2 + 1
-    return money
+    money * 2 + 1
   end
 end

@@ -3,14 +3,13 @@ require_relative'tanto'
 require_relative'Shunin'
 require_relative'Bucho'
 
-shain = Tanto.new
-shain.standup
-puts"私の給料は#{shain.clac_salary(100)}円です。"
+shain = Tanto.new(100)
+puts shain.calc_salary
 
-shain = Shunin.new
+shain = Shunin.new(100)
 shain.standup
-puts"私の給料は#{shain.clac_salary(100)}円です。"
+puts shain.clac_salary(100)
 
-shain = Bucho.new
+shain = Bucho.new(100)
 shain.standup
-puts"私の給料は#{shain.clac_salary(100)}円です。"
+puts shain.clac_salary(100)

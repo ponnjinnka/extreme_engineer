@@ -1,10 +1,20 @@
-class Shain
-  def standup
-    puts "社員はとりあえず起立する"
+module Salary
+  def calc_salary
+    kihon + teate
   end
 
-  def clac_salary(money)
-    money = money
-    return money
+  def kihon
+    @kihonkyu
+  end
+
+  def teate
+    0
+  end
+end
+
+class Shain
+include Salary
+  def initialize(kihonkyu)
+    @kihonkyu = kihonkyu
   end
 end
